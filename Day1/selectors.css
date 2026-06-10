@@ -1,0 +1,43 @@
+h2 + p {
+  color: red;
+}
+article > p:first-of-type {
+  color: blue;
+}
+.four-legs li:nth-child(2) {
+  color: blueviolet;
+}
+a:hover {
+  color: orangered;
+}
+
+article h2:first-child {
+  font-style: italic;
+}
+.fruits li:nth-child(3n + 1) {
+  color: orange;
+}
+
+input:focus {
+  background-color: bisque;
+}
+
+ul li:last-child {
+  font-weight: bold;
+}
+input[type="email"] {
+  box-sizing: border-box;
+  color: aqua;
+}
+.card.featured {
+  font-style: italic;
+}
+.par::before {
+  content: "Outside the..";
+}
+.par::after {
+  content: ".";
+}
+.ext {
+  color: rgb(218, 11, 132);
+}
