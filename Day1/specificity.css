@@ -1,0 +1,62 @@
+/* (0,0,0,0) */
+* {
+  color: rgb(51, 51, 138);
+}
+/* 0,0,0,2 */
+div p {
+  color: blueviolet;
+}
+/* 0,0,0,2 */
+div > p {
+  color: rgb(166, 185, 185);
+}
+/* 1,0,0,0,0 */
+.bodyclass div p {
+  color: rgb(9, 238, 219) !important;
+}
+/* 0,0,1,1 */
+.parclass p {
+  color: rgb(129, 9, 241);
+}
+/* 0,1,0,0 */
+#idval {
+  color: rgb(137, 175, 149);
+}
+/* Rule using id may be the winning rule among all these rules */
+/* But inline css have higher priority than all these except the rule marked with !important */
+/* So winning rule is .bodyclass div p */
+/* 0,0,1,0 */
+.classval {
+  color: black;
+}
+/* 0,0,1,1 */
+p:nth-child(1) {
+  color: rgb(252, 138, 0);
+}
+/* 0,0,1,1 */
+p:first-child {
+  color: rgb(238, 98, 98);
+}
+/* 0,0,1,1 */
+p:last-child {
+  color: rgb(53, 56, 56);
+}
+/* 0,0,1,0 */
+
+.pclass {
+  color: rgb(10, 247, 247);
+}
+/* 0,0,2,0 */
+.classval.pclass {
+  color: rgb(63, 29, 29);
+}
+/* 0,1,1,1 */
+#parid > p:first-of-type {
+  color: rgb(9, 255, 0);
+}
+/* specificity */
+/* 1-0-0 ID selectors */
+/* 0-1-0 Class selectors,attribute selectors and psudo classes */
+/* 0-0-0 Universal selectors */
+/* 1-0-0-0 Inline CSS */
+/* 1-0-0-0-0 Rule marked as important */
