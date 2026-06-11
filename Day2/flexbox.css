@@ -1,0 +1,198 @@
+.box {
+    min-width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 {
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    
+    display: flex;
+    justify-content: flex-start;
+}
+.container2 {
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+.container3 {
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+.container4 {
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.container5 {
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+.container6 {
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container7 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    align-items: stretch;
+}
+.container8 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    align-items: flex-start;
+}
+.container9 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    align-items: flex-end;
+}
+.container10 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+}
+.container11 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    align-items: baseline;
+}
+.container12 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.container13 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.container14 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.container15 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.container16 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.container17 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.container18 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+}
+.container19 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container20 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.container21 {
+    background-color: white;
+    height: 200px;
+    border: 1px solid black;
+    color: white;
+    margin: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+}
