@@ -1,0 +1,99 @@
+body {
+  background-image: url(https://img.magnific.com/free-vector/abstract-background-with-pink-purple-flowing-lines-design_1048-20364.jpg?semt=ais_hybrid&w=740&q=80);
+}
+header {
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 250, 250, 0.2),
+    rgba(129, 122, 230, 0.7),
+    rgb(1, 1, 31)
+  );
+  box-shadow: 5px 5px 40px 5px rgb(48, 59, 223);
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.main-head {
+  font-style: italic;
+  font-size: 4em;
+  color: rgb(235, 255, 163);
+}
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-ul li {
+  padding: 0.5em;
+  margin-right: 2em;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.nav-ul li a {
+  color: rgb(197, 207, 207);
+}
+.nav-ul li a:hover {
+  color: rgb(197, 207, 207);
+  font-size: 1.02em;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  flex: 1;
+  border: 1px solid black;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 250, 250, 0.2),
+    rgba(129, 122, 230, 0.7),
+    rgb(1, 1, 31)
+  );
+  color: bisque;
+}
+.col-head {
+  text-align: center;
+  font-style: oblique;
+  color: rgb(236, 236, 236);
+}
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+}
+.test-col {
+  flex: 1;
+  border: 1px solid black;
+  margin: 0.5em;
+  box-sizing: content-box;
+  color: bisque;
+  font-weight: 600;
+  padding: 0.5em;
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 250, 250, 0.2),
+    rgba(129, 122, 230, 0.7),
+    rgb(1, 1, 31)
+  );
+}
+.test-head {
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  color: rgb(217, 240, 237);
+}
+main {
+  margin-top: 2em;
+  box-shadow: 5px 5px 40px 5px rgb(48, 59, 223);
+}
+footer {
+  justify-content: center;
+  text-align: left;
+  color: bisque;
+  font-weight: 500;
+}
+.mail {
+  color: bisque;
+  font-weight: 700;
+}
