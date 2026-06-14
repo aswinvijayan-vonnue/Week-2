@@ -12,7 +12,7 @@
     </header>
     <main class="main-content">
       <div class="form-container">
-        <form action="">
+        <form>
           <p class="req-class">Fields marked * are required</p>
           <fieldset class="address">
             <legend>Delivery Address</legend>
@@ -20,7 +20,7 @@
               <div class="input">
                 <label for="fname">First Name *</label>
                 <div class="error">
-                  <input type="text" id="fname" required placeholder=" " />
+                  <input type="text" id="fname" class="requied-input" required placeholder=" " />
                   <span class="error-msg">Please fill out this field.</span>
                 </div>
               </div>
@@ -28,7 +28,7 @@
                 <label for="lname">Last Name *</label>
                 <div class="error">
                   <input type="text" id="lname" required />
-                  <!-- <p>Please Enter</p> -->
+                  <span class="error-msg">Please fill out this field.</span>
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <label for="addr1">Address Line 1 *</label>
               <div class="error">
                 <input type="text" id="addr1" required />
-                <!-- <p>Please Enter</p> -->
+                <span class="error-msg">Please fill out this field.</span>
               </div>
             </div>
             <div class="input">
@@ -47,19 +47,20 @@
               <label for="city">City *</label>
               <div class="error">
                 <input type="text" id="city" required />
-                <!-- <p>Please Enter</p> -->
+                <span class="error-msg">Please fill out this field.</span>
               </div>
             </div>
             <div class="input">
               <label for="pcode">Postcode *</label>
               <div class="error">
                 <input type="text" id="pcode" required />
+                <span class="error-msg">Please fill out this field.</span>
               </div>
             </div>
             <div class="input">
               <label for="country">Select Country *</label>
               <div class="error">
-                <select id="country">
+                <select id="country" required>
                   <option value="India">India</option>
                   <option value="China">China</option>
                   <option value="Pakistan">Pakistan</option>
@@ -84,6 +85,8 @@
                   <option value="Spain">Spain</option>
                   <option value="Thailand">Thailand</option>
                 </select>
+                <span class="error-msg">Please fill out this field.</span>
+
               </div>
             </div>
           </fieldset>
@@ -93,13 +96,14 @@
               <label for="cardnumber">Card Number *</label>
               <div class="error">
                 <input type="number" id="cardnumber" required />
+                <span class="error-msg">Please fill out this field.</span>
               </div>
             </div>
             <div class="month-year">
               <div class="input">
                 <label for="month">Month *</label>
                 <div class="error">
-                  <select id="month">
+                  <select id="month" value=" ">
                     <option value="Jan">January</option>
                     <option value="Feb">February</option>
                     <option value="Mar">March</option>
@@ -117,7 +121,8 @@
               <div class="input">
                 <label for="year">Year *</label>
                 <div class="error">
-                  <input type="number" id="year" min="2026" max="2090" placeholder="YYYY" rrequired>
+                  <input type="number" id="year" min="2026" max="2090" placeholder="YYYY" required>
+                  <span class="error-msg">Please fill out this field.</span>
                 </div>
               </div>
 
@@ -133,6 +138,7 @@
                 aria-describedby="cvvrule"
                 required
               />
+              <span class="error-msg">Please fill out this field.</span>
               <p id="cvvrule" role="tooltip">
                 3 or 4 digits on the back of your card
               </p>

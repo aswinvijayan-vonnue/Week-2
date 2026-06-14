@@ -31,7 +31,7 @@ label {
     width: fit-content;
 }
 input {
-    height: 1.5em;
+    height: 1em;
     font-size: 1.2em;
 }
 select {
@@ -90,13 +90,30 @@ form {
     display: flex;
     justify-content: flex-end;
 }
+@media (max-width:600px) {
+    .address {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .error-msg {
-    color: rgb(217, 18, 18);
+    display: none;
+    font-size: 1.2em;
+    color: red;
+    font-style:oblique;
+
 }
-.error input:required:user-invalid :not(:placeholder-shown) + .error-msg {
+.error input:user-invalid + .error-msg {
     display: block;
-    color: black;
 }
-.error input:required:user-invalid :not(:placeholder-shown) {
-    border: red;
+.error input:user-invalid {
+    border: 2px double rgb(159, 6, 6);
+}
+input:focus {
+    background-color: rgb(234, 237, 237);
 }
