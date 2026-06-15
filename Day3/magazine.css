@@ -1,0 +1,77 @@
+.main-area {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, 200px);
+  background-color: rgb(215, 206, 195);
+  grid-template-areas:
+    "h h h h"
+    "nav nav nav nav"
+    "hero hero hero hero"
+    "side art1 art2 ad"
+    "footer footer footer footer";
+  gap: 1em;
+}
+.main-area div {
+  background-color: rgb(84, 179, 197);
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  align-content: center;
+}
+.header {
+  grid-area: h;
+}
+.nav-area {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  font-size: 1.5em;
+  gap: 1px;
+  place-items: center;
+}
+.hero {
+  grid-area: hero;
+  align-content: center;
+  text-align: center;
+  font-size: 1.5em;
+}
+.sidebar {
+  grid-area: side;
+}
+.article1 {
+  grid-area: art1;
+}
+.article2 {
+  grid-area: art2;
+}
+.ad {
+  grid-area: ad;
+}
+.footer {
+  grid-area: footer;
+}
+@media (max-width: 900px) {
+  .main-area {
+    grid-template-areas:
+      "h h"
+      "nav nav"
+      "hero hero"
+      "art1 art2"
+      "side ad"
+      "footer footer";
+  }
+}
+@media (max-width: 600px) {
+  .main-area {
+    grid-template-areas:
+      "h"
+      "nav"
+      "hero"
+      "side"
+      "art1"
+      "art2"
+      "ad"
+      "footer";
+  }
+}
