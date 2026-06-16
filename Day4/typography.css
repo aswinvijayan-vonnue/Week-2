@@ -1,0 +1,40 @@
+h1 {
+    font-size: clamp(2.4rem,5vw + 1rem,5.6rem);
+}
+h2 {
+    font-size: clamp(2.4rem,5vw,4rem);
+}
+h3 {
+    font-size: clamp(2rem,4vw,3.8rem);
+}
+h4 {
+    font-size: clamp(1.7rem,3vw,3.4rem);
+}
+h5 {
+    font-size: clamp(1rem,2vw,3rem);
+}
+h6 {
+    font-size: clamp(0.8rem,1.4vw,2.8rem);
+}
+.grid-box {
+    width: clamp(10em,40vw,90em);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(214, 246, 246);
+    gap: clamp(1rem,0.1vw,5rem);
+    container-type: inline-size;
+    container-name: grid-box;
+}
+.box {
+    border: 1px solid black;
+    min-height:150px ;
+    background-color: rgb(240, 240, 223);
+    font-size: 2em;
+    padding: clamp(1em,0.1vw,5em);
+}
+@container grid-box (min-width : 500px){
+    .box {
+        font-size: 4em;
+        background-color: rebeccapurple;
+    }
+}
