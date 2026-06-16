@@ -1,0 +1,118 @@
+.main-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-body div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
+}
+.box1{
+    background-color: yellow;
+}
+.box2{
+    background-color: red;
+}
+.box3{
+    background-color: rgb(69, 226, 49);
+}
+.box4{
+    background-color: rgb(243, 72, 209);
+}
+.box5{
+    background-color: rgb(37, 249, 224);
+}
+.main-body div:hover {
+    transition-property: background-color,transform;
+    transition-duration: 5s;
+    transition-delay: 0.5s;
+    transform: rotate(180deg);
+}
+.box1:hover {
+    transition-timing-function: ease;
+    background-color: red;
+
+}
+.box2:hover {
+    transition-timing-function: linear;
+    background-color: aquamarine;
+}
+.box3:hover {
+    transition-timing-function: ease-in;
+    background-color: blueviolet;
+}
+.box4:hover {
+    transition-timing-function: ease-in-out;
+    background-color: rgb(32, 33, 32);
+}
+.box5:hover {
+    transition-timing-function: ease-out;
+    background-color: rgb(227, 204, 140);
+}
+.bouncing-button {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(218, 194, 194);
+    font-size: 2em;
+}
+.bouncing-button:hover {
+    transition-property: transform;
+    transition-duration: 4s;
+    transition-delay: 0.5s;
+    transition-timing-function: cubic-bezier(0.57, 2.06, 0.58,-1.25);
+    transform: translateX(80%);
+}
+.card {
+    font-size: 1.6em;
+    margin: auto;
+    border: 1px solid black;
+    width: 50%;
+    transition-property: all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-para {
+    opacity: 0.3;
+}
+.card-button {
+    width: 10em;
+    height: 6em;
+}
+.card:hover .header {
+    transition-duration: 1s;
+    color: rgb(239, 14, 14);
+}
+.card:hover .card-para{
+    transition-duration: 3s;
+    transition-delay: 50ms;
+    opacity: 1;
+
+}
+.card:hover button{
+    transition-duration: 3s;
+    transition-delay: 100ms;
+    transform: translate(40%);
+}
+.focus-style {
+    font-size: 2em;
+}
+.name{
+    width: 300px;
+    height: 50px;
+    font-size: 1.2em;
+    margin-left: 0.5em;
+    transition-property: all;
+}
+.name:focus {
+    outline: 0.1px dashed blue;
+    background-color: #bda9a9;
+    transition-duration: 3s;
+}
