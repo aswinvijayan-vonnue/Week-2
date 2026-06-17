@@ -1,0 +1,30 @@
+@media print {
+    nav {
+        display: none !important;
+    }
+    .sidebar {
+        display: none !important;
+    }
+    .ad {
+        display: none !important;
+    }
+    video {
+        display: none !important;
+    }
+    button {
+        display: none !important;
+    }
+    *{
+        animation: none !important;
+        transition: none !important;
+    }
+    .collapsed,.tabPanles {
+        display: block !important;
+    }
+    a[href^='http']::after {
+        content: '('attr(href)')'
+    }
+    h1,h2,h3,h4,h5,h6{
+        break-after: avoid;
+    }
+}
