@@ -4,7 +4,7 @@ h2 + p {
 article > p:first-of-type {
   color: blue;
 }
-.four-legs li:nth-child(2) {
+.four-legs li:nth-child(even) {
   color: blueviolet;
 }
 a:hover {
@@ -25,7 +25,7 @@ input:focus {
 ul li:last-child {
   font-weight: bold;
 }
-input[type="email"] {
+input[type='email'] {
   box-sizing: border-box;
   color: aqua;
 }
@@ -33,11 +33,11 @@ input[type="email"] {
   font-style: italic;
 }
 .par::before {
-  content: "Outside the..";
+  content: 'Outside the..';
 }
 .par::after {
-  content: ".";
+  content: '.';
 }
-.ext {
+a[href^='https'] {
   color: rgb(218, 11, 132);
 }
