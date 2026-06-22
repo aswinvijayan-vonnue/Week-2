@@ -1,0 +1,44 @@
+:root {
+  --color-primary: rgb(255, 0, 0);
+  --color-secondary: rgb(103, 226, 140);
+  --color-accent: rgb(0, 140, 255);
+  --color-success: rgb(14, 247, 14);
+  --color-warning: rgb(199, 102, 238);
+  --color-error: rgb(226, 37, 23);
+  --color-text: rgb(46, 46, 248);
+  --color-bg: rgb(215, 246, 255);
+  --color-gray-900: rgb(230, 227, 64);
+  --color-gray-800: rgb(52, 99, 26);
+  --color-gray-700: rgb(73, 106, 133);
+  --color-gray-600: rgb(117, 11, 52);
+  --color-gray-500: rgb(105, 33, 107);
+  --color-gray-hex: #cc1e1e;
+  --color-gray-rgb: rgb(77, 76, 76);
+  --color-gray-hsl: hsl(240, 83%, 82%);
+  --color-gray-oklch: oklch(82.196% 0.09627 244.186);
+}
+
+:root[data-theme="dark"] {
+    --color-primary: rgb(139, 255, 188);
+    --color-secondary: rgb(226, 241, 231);
+}
+
+h1 {
+    color: var(--color-primary);
+}
+h2 {
+    color: var(--color-accent);
+}
+p{
+    color: var(--color-error);
+}
+footer {
+    color: var(--color-gray-hsl);
+}
+.three-column {
+    color: var(--color-secondary);
+}
+
+.testimonials {
+    color: var(--color-gray-900);
+}
