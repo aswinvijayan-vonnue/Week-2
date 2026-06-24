@@ -1,0 +1,44 @@
+.focus,.focus-visible {
+    color: blue;
+}
+.nav-bar ul a:hover {
+    color: red;
+}
+.focus-visible:focus-visible{
+    color: black;
+}
+.focus:focus {
+    color: black;
+}
+.check-label::before{
+    content: "";
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    border: 1px solid black;
+    margin-right: 1em;
+}
+input[type=checkbox] {
+    appearance: none;
+}
+input[type=checkbox]:checked + .check-label::before {
+    content: "*";
+}
+.fruits {
+    counter-reset: li;
+}
+.fruits li::before {
+    counter-increment: li;
+    content: "List" counter(li) ":";
+}
+.tooltip {
+    position: relative;
+}
+.tooltip::after {
+    position: absolute;
+    content: attr(data-tooltip);
+    visibility: hidden;
+}
+.tooltip:hover::after{
+    visibility: visible;
+}
