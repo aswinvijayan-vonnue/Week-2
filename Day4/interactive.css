@@ -1,0 +1,53 @@
+.accordian {
+    font-size: 2em;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=checkbox]{
+    width: 50px;
+    height: 30px;
+    display: none;
+}
+.accordian .content {
+    color: red;
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+}
+#label:checked + .content {
+    max-height: 200px;
+}
+.tab {
+    font-size: 2em;
+    display: flex;
+    gap: 2em;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.tab1-content,.tab2-content {
+    display: none;
+}
+#tab2:checked + .tab2-content{
+    display: block;
+}
+#tab1:checked + .tab1-content{
+    display: block;
+}
+.rating {
+    width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rating label::before {
+    content: '\2606';
+}
+.rating input[type="radio"]:checked ~ label::before{
+    content: '\2606';
+    color: rgb(50, 18, 229);
+}
