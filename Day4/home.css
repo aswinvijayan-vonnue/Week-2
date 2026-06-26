@@ -1,0 +1,111 @@
+:root {
+  --color-primary: rgb(19, 18, 18);
+  --color-secondary: rgb(248, 16, 16);
+  --color-accent: rgb(0, 140, 255);
+  --color-success: rgb(14, 247, 14);
+  --color-warning: rgb(199, 102, 238);
+  --color-error: rgb(226, 37, 23);
+  --color-text: rgb(46, 46, 248);
+  --color-bg: rgb(215, 246, 255);
+  --color-gray-900: rgb(230, 227, 64);
+  --color-gray-800: rgb(52, 99, 26);
+  --color-gray-700: rgb(73, 106, 133);
+  --color-gray-600: rgb(117, 11, 52);
+  --color-gray-500: rgb(105, 33, 107);
+  --color-gray-hex: #cc1e1e;
+  --color-gray-rgb: rgb(247, 241, 241);
+  --color-gray-hsl: hsl(240, 83%, 82%);
+  --color-gray-oklch: oklch(82.196% 0.09627 244.186);
+}
+body {
+    background-color: var(--color-gray-rgb);
+}
+header {
+  text-align: center;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.main-head {
+  font-style: italic;
+  font-size: 4em;
+  color: var(--color-secondary)
+}
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-ul li {
+  padding: 0.5em;
+  margin-right: 2em;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.nav-ul li a {
+  color: var(--color-primary)
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  flex: 1;
+  border: 1px solid var(--color-secondary);
+  margin: 0.5em;
+  padding: 0.5em;
+  color: var(--color-primary)
+}
+.col-head {
+  text-align: center;
+  font-style: oblique;
+  color: var(--color-primary)
+}
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+}
+.toggle{
+    color: var(--color-primary);
+    font-size: 1.8em;
+}
+.toggle input {
+    width: 1.5em;
+    height: 1.5em;
+}
+.test-col {
+  flex: 1;
+  border: 1px solid var(--color-secondary);
+  margin: 0.5em;
+  box-sizing: content-box;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 0.5em;
+}
+.test-head {
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  color: var(--color-secondary);
+}
+main {
+  margin-top: 2em;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary)
+}
+.mail {
+  color: var(--color-text);
+  font-weight: 700;
+}
+@media  (prefers-color-scheme: dark) {
+    :root{
+        --color-primary: rgb(241, 230, 230);
+        --color-secondary:rgb(155, 237, 252);
+        --color-text:rgb(180, 180, 250);
+        --color-gray-rgb: rgb(66, 65, 65);
+ }
+}
