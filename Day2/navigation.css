@@ -59,13 +59,9 @@ header {
   height: 5.2em;
 }
 nav {
-  margin-left: 50%;
-  margin-right: 50%;
   display: flex;
   justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  flex: 1;
 }
 nav a {
   font-size: 1.5em;
