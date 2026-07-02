@@ -1,0 +1,119 @@
+.address {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 242, 240);
+    margin-top: 1.5em;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1em;
+}
+.fname-lname,.month-year {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+label {
+    width: 180px;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.error {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 2em;
+    width: fit-content;
+}
+input {
+    height: 1em;
+    font-size: 1.2em;
+}
+select {
+    height: 3em;
+    font-size: 1.2em;
+}
+#addr2 {
+    flex-grow: 1;
+}
+h1 {
+    text-align: center;
+}
+legend {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.req-class {
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+}
+.ordernotes {
+    height: 150px;
+    display: flex;
+}
+.ordernotes textarea {
+    height:100px;
+}
+.ordernotes textarea::placeholder {
+    display: flex;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+input[type=submit],input[type=reset] {
+    width: 10em;
+    height: 4em;
+    margin: auto;
+    margin: 1em;
+    box-shadow: 10px 10px 50px 5px rgb(106, 105, 104);
+
+}
+input[type=submit]:hover,input[type=reset]:hover {
+    width: 10.2em;
+    height: 4.2em;
+    align-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 224, 224);
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width:600px) {
+    .address {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.error-msg {
+    display: none;
+    font-size: 1.2em;
+    color: red;
+    font-style:oblique;
+
+}
+.error input:user-invalid + .error-msg {
+    display: block;
+}
+.error input:user-invalid {
+    border: 2px double rgb(159, 6, 6);
+}
+input:focus {
+    background-color: rgb(234, 237, 237);
+}

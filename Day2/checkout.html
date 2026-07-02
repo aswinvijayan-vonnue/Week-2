@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./checkout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Payment Form</h1>
+    </header>
+    <main class="main-content">
+      <div class="form-container">
+        <form>
+          <p class="req-class">Fields marked * are required</p>
+          <fieldset class="address">
+            <legend>Delivery Address</legend>
+            <div class="fname-lname">
+              <div class="input">
+                <label for="fname">First Name *</label>
+                <div class="error">
+                  <input type="text" id="fname" class="requied-input" required placeholder=" " />
+                  <span class="error-msg">Please fill out this field.</span>
+                </div>
+              </div>
+              <div class="input">
+                <label for="lname">Last Name *</label>
+                <div class="error">
+                  <input type="text" id="lname" required />
+                  <span class="error-msg">Please fill out this field.</span>
+                </div>
+              </div>
+            </div>
+            <div class="input">
+              <label for="addr1">Address Line 1 *</label>
+              <div class="error">
+                <input type="text" id="addr1" required />
+                <span class="error-msg">Please fill out this field.</span>
+              </div>
+            </div>
+            <div class="input">
+              <label for="addr2">Address Line 2 </label>
+              <input type="text" id="addr2" />
+            </div>
+            <div class="input">
+              <label for="city">City *</label>
+              <div class="error">
+                <input type="text" id="city" required />
+                <span class="error-msg">Please fill out this field.</span>
+              </div>
+            </div>
+            <div class="input">
+              <label for="pcode">Postcode *</label>
+              <div class="error">
+                <input type="text" id="pcode" required />
+                <span class="error-msg">Please fill out this field.</span>
+              </div>
+            </div>
+            <div class="input">
+              <label for="country">Select Country *</label>
+              <div class="error">
+                <select id="country" required>
+                  <option value="India">India</option>
+                  <option value="China">China</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Bengladesh">Bengladesh</option>
+                  <option value="Srilanka">Srilanka</option>
+
+                  <option value="Argentina">Argentina</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Denmark">Denmark</option>
+
+                  <option value="Egypt">Egypt</option>
+                  <option value="France">France</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Japan">Japan</option>
+
+                  <option value="Kenya">Kenya</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Thailand">Thailand</option>
+                </select>
+                <span class="error-msg">Please fill out this field.</span>
+
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="address">
+            <legend>Payment Details</legend>
+            <div class="input">
+              <label for="cardnumber">Card Number *</label>
+              <div class="error">
+                <input type="number" id="cardnumber" required />
+                <span class="error-msg">Please fill out this field.</span>
+              </div>
+            </div>
+            <div class="month-year">
+              <div class="input">
+                <label for="month">Month *</label>
+                <div class="error">
+                  <select id="month" value=" ">
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="Jun">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input">
+                <label for="year">Year *</label>
+                <div class="error">
+                  <input type="number" id="year" min="2026" max="2090" placeholder="YYYY" required>
+                  <span class="error-msg">Please fill out this field.</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="input">
+              <label for="cvv">CVV *</label>
+              <div class="error">
+                <div class="cvv">
+                  <input
+                type="password"
+                maxlength="4"
+                id="cvv"
+                aria-describedby="cvvrule"
+                required
+              />
+              <span class="error-msg">Please fill out this field.</span>
+              <p id="cvvrule" role="tooltip">
+                3 or 4 digits on the back of your card
+              </p>
+                </div>
+
+              </div>
+
+            </div>
+          
+          </fieldset>
+          <fieldset class="address ordernotes">
+            <legend>Order Notes</legend>
+            <textarea
+              name="notes"
+              id="notes"
+              rows="4"
+              cols="50"
+              placeholder="Order Notes"
+            ></textarea>
+          </fieldset>
+          <div class="buttons">
+          <input type="submit">
+          <input type="reset">
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
